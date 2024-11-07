@@ -1,0 +1,68 @@
+<!DOCTYPE aseba-playground>
+<aseba-playground>
+  <author name="Your Name" email="your@email.com" />
+  <description lang="en">A 5x4 maze with walls and baseplates</description>
+
+  <!-- Define colors -->
+  <color name="white" r="1.0" g="1.0" b="1.0" />
+  <color name="red" r="1.0" g="0.0" b="0.0" />
+  <color name="blue" r="0.0" g="0.0" b="1.0" />
+  <color name="green" r="0.0" g="1.0" b="0.0" />
+  color name="black" r="0.0" g="0.0" b="0.0" />
+
+  <!-- Define the world dimensions -->
+  <world w="300" h="200" color="white" groundTexture="maze.png" />
+
+  <!-- Define the walls of the maze -->
+  <!--Horizontal Walls-->
+
+ 
+  <wall x="250" y="120" l1="100" l2="10" h="10" color="white" />
+  <wall x="220" y="155" l1="50" l2="10" h="10" color="white" />
+  
+  <wall x="185" y="40" l1="50" l2="10" h="10" color="white" />
+  <wall x="185" y="80" l1="60" l2="10" h="10" color="white" />
+
+  <wall x="70" y="110" l1="80" l2="10" h="10" color="white" />
+  <wall x="70" y="75" l1="80" l2="10" h="10" color="white" />
+
+  <!-- Vertical Walls -->
+  <wall x="25" y="25" l1="10" l2="80" h="10" color="white" />
+  <wall x="25" y="150" l1="10" l2="90" h="10" color="white" />
+  <wall x="200" y="132" l1="10" l2="35" h="10" color="white" />
+
+  <wall x="70" y="50" l1="10" l2="50" h="10" color="white" />
+  <wall x="100" y="50" l1="10" l2="50" h="10" color="white" />
+ 
+  <wall x="160" y="60" l1="10" l2="35" h="10" color="white" />
+  <wall x="250" y="40" l1="10" l2="70" h="10" color="white" />
+  <wall x="210" y="20" l1="10" l2="45" h="10" color="white" />
+  
+  <wall x="165" y="200" l1="10" l2="80" h="10" color="white" />
+  <wall x="80" y="122" l1="10" l2="35" h="10" color="white" />
+
+
+  <area name="bluebase">
+	  <point x="60" y="110" />
+	  <point x="60" y="130" />
+	  <point x="80" y="130" />
+	  <point x="80" y="110" />
+	</area>
+
+  <area name="greenbase">
+	  <point x="200" y="140" />
+	  <point x="200" y="120" />
+	  <point x="220" y="120" />
+	  <point x="220" y="140" />
+	</area>
+  
+  <area name="redbase">
+	  <point x="165" y="45" />
+	  <point x="165" y="65" />
+	  <point x="185" y="65" />
+	  <point x="185" y="45" />
+	</area>
+
+  <!-- Place the Thymio robot -->
+  <robot type="thymio2" x="250" y="50" port="33334" angle="90" name="Thymio" nodeId="1" />
+</aseba-playground>
